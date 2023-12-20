@@ -1,0 +1,248 @@
+.formContainer {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.subContainer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+}
+.Schlogo img {
+  width: 150px;
+}
+
+.SchName {
+  padding-left: 6rem;
+}
+.SchName h1 {
+  color: #040d12;
+  font-size: 4.1rem;
+}
+.SchAddress {
+  justify-content: center;
+  align-items: center;
+}
+.SchAddress p {
+  text-align: center;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #4f4a45;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.SchOffce {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.SchOffce .SchReg {
+  border: 1px solid black;
+  padding: 10px;
+  color: #4f4a45;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.SchReg small {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.SchOffce .SchRegname {
+  padding-left: 6rem;
+  font-weight: bolder;
+  font-size: 2.3rem;
+  color: #040d12;
+}
+.SchHeader {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+}
+.SchHeader::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 3px;
+  width: 50px;
+  background-color: #4070f4;
+}
+.form {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  display: grid;
+  grid-template: auto repeat(6, 65px) auto repeat(2, 65px) / repeat(3, 1fr);
+  gap: 10px 15px;
+
+  & > .title {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-transform: capitalize;
+    color: #333;
+    font-weight: 500;
+  }
+}
+
+.formControler {
+  display: flex;
+  flex-direction: column;
+  &:has(textarea) {
+    grid-row-end: span 2;
+  }
+
+  & > label {
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    margin-left: 5px;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  & > input {
+    border-radius: 6px;
+    padding: 10px 0;
+    border: 2px solid #cccccc;
+    background: #fff;
+  }
+
+  & > textarea {
+    padding: 10px;
+    resize: none;
+    flex-grow: 1;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    background: #fff;
+  }
+}
+.oneLine {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 100%;
+  border-top: 3px dotted black;
+}
+.ackow {
+  align-items: center;
+  text-align: center;
+}
+.ackow h3 {
+  color: #333;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.ackow p {
+  color: red;
+  font-family: sans-serif;
+}
+.attach {
+  margin-top: 20px;
+}
+.attach p {
+  color: black;
+  font-weight: bolder;
+}
+.list {
+  margin-left: 1rem;
+}
+.attach ol li {
+  list-style-type: decimal;
+  color: black;
+}
+
+.photoareawrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.photoarea {
+  border: 2px solid black;
+  width: 130px;
+  height: 130px;
+  max-width: 125px;
+  margin: 6px 10px;
+  padding: 2px;
+  text-align: center;
+  flex: auto;
+  color: black;
+}
+
+.signaturearea {
+  width: 120px;
+  margin: 3px;
+  padding: 2px;
+  text-align: center;
+  flex: 3;
+  color: black;
+  align-self: center;
+}
+
+.buttonContainer {
+  display: flex;
+  padding-left: 14px;
+  padding-top: 20px;
+  align-items: center;
+  gap: 50px;
+}
+.buttonContainer .subBtn {
+  align-items: center;
+  justify-content: space-between;
+}
+.buttonContainer .clsBtn {
+  padding-left: 4rem;
+  border-radius: 3px;
+  color: #fff;
+  border: 2px solid red;
+}
+.btns {
+  margin-top: 1.2rem;
+}
+button[type="button"] {
+  background-color: red;
+  color: #f5ecdc;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  margin-top: 5px;
+  margin-right: 34px;
+}
+
+button[type="button"]:hover {
+  background-color: #1f1b2b;
+}
+
+.form {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  display: grid;
+  grid-template: auto repeat(6, 65px) auto repeat(2, 65px) / repeat(3, 1fr);
+  gap: 10px 15px;
+
+  & > .title {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-transform: capitalize;
+    color: #333;
+    /* font-weight: 500; */
+  }
+
+  @media (max-width: 600px) {
+    grid-template: auto repeat(8, 65px) / 1fr;
+  }
+}

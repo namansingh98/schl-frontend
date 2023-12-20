@@ -1,0 +1,137 @@
+.container {
+  width: var(--container-width-lg);
+  max-width: 1920px;
+  margin-inline: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+  color: var(--color-gray-100);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+a {
+  color: var(--color-gray-100);
+}
+
+/* img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+} */
+
+/* Footer  */
+footer {
+  background-color: black;
+  margin-top: 7rem;
+  padding-top: 7rem;
+  font-size: 0.9rem;
+  color: wheat;
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: 26rem 2fr 1fr 1fr;
+}
+.footer__container article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.footer__container article p {
+  margin-top: 0.5rem;
+}
+
+.footer__container article h4 {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+
+.footer__socials {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer__socials a {
+  background-color: var(--color-gray-100);
+  padding: 0.7rem;
+  border: 1px solid transparent;
+  border-radius: 0.6rem;
+  transition: var(--trainsition);
+  font-size: large;
+}
+.footer__socials a svg {
+  color: var(--color-gray-600);
+}
+.footer__socials a:hover {
+  border-radius: var(--color-gray-100);
+  color: black;
+  background: wheat;
+  transition: var(--trainsition);
+}
+
+.footer__copyright {
+  color: var(--color-gray-100);
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 2px solid var(--color-primary-varient);
+  margin-top: 5rem;
+  font-size: medium;
+}
+
+/* .Logo {
+  width: 100%;
+  display: block;
+  gap: 6rem;
+} */
+.Logof {
+  width: 100%;
+}
+
+/* footer media Query for (small medium  screens) */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+/* footer media Query for (small screens) */
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  footer {
+    margin-top: 7rem;
+  }
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .footer__container article {
+    align-items: center;
+  }
+  .footer__container article p {
+    text-align: center;
+  }
+}
